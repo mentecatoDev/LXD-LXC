@@ -1,3 +1,3 @@
 # LXD-LXC
-[[TiddlyWiki sobre Contenedores Linux][https://mentecatodev.github.io/LXD-LXC/LXD-LXC.html]]
+[TiddlyWiki sobre Contenedores Linux](https://mentecatodev.github.io/LXD-LXC/LXD-LXC.html)
 
