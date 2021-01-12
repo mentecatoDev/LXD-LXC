@@ -8959,7 +8959,7 @@ Error message and password prompt
 <div created="20181129095016534" modified="20181129095016534" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20181129095234189" modified="20191020085826049" title="$:/state/sidebar">
+<div created="20181129095234189" modified="20201209081223117" title="$:/state/sidebar">
 <pre>no</pre>
 </div>
 <div created="20181129093244145" modified="20181129093254034" title="$:/state/tab-1749438307">
@@ -8971,13 +8971,13 @@ Error message and password prompt
 <div created="20181129095156301" modified="20181130095024943" title="$:/state/tab/sidebar--1835078512">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
-<div created="20191020084928673" modified="20191020085158549" title="$:/state/toc/Contenidos-Inicializando...-1645261823">
-<pre>close</pre>
+<div created="20191020084928673" modified="20201209081422962" title="$:/state/toc/Contenidos-Inicializando...-1645261823">
+<pre>open</pre>
 </div>
 <div created="20181130093856786" modified="20191020085157608" title="$:/state/toc/Contenidos-Prácticas-1645261823">
 <pre>close</pre>
 </div>
-<div list="Contenidos [[Conceptos básicos de contenedores]]" title="$:/StoryList">
+<div list="Contenidos [[Instalando el Software: Paquetería snap]] [[Añadiendo usuario al grupo LXD]] Inicializando..." title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -8993,7 +8993,7 @@ Error message and password prompt
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///home/pater/Dropbox/Apuntes/contenedores/LXC-LXD.html&quot;
+            &quot;text&quot;: &quot;file:///home/mentecato/Dropbox/apuntes/LXD-LXC/LXD-LXC.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
@@ -9013,7 +9013,7 @@ Error message and password prompt
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/home/pater/Dropbox/Apuntes/contenedores/LXC-LXD.html&quot;
+            &quot;text&quot;: &quot;/home/mentecato/Dropbox/apuntes/LXD-LXC/LXD-LXC.html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -9168,11 +9168,11 @@ Ya no necesitaremos ese contenedor, así que deténgamoslo y elimíneloslo con:
     lxc delete --force second
 </pre>
 </div>
-<div created="20191020081925095" modified="20191020085152570" orden="01" tags="Inicializando..." title="Añadiendo usuario al grupo LXD" type="text/x-markdown">
+<div created="20191020081925095" modified="20201209082409444" orden="01" tags="Inicializando..." title="Añadiendo usuario al grupo LXD" type="text/x-markdown">
 <pre>Para permitir el acceso a la gestión de los contenedores por un usuario cualquiera del sistema y no solo por el `root`, hemos de añadirlo al grupo del sistema`lxd` que, por otro lado, es posible que aún no haya sido creado.
 Para crear el grupo `lxd` se usa:
 
-    # add group lxd
+    # groupadd --system lxd
 
 y para añadir el usuario elegido al grupo
 
@@ -9318,8 +9318,8 @@ Tanto lxd como lxc tienen el concepto de contenedores sin privilegios versus con
 
 Los contenedores sin privilegios tienen relativamente menos funciones que los contenedores con privilegios en términos de lo que pueden hacer con el sistema operativo y el acceso directo al hardware, pero eso es algo bueno, porque muchas características de tipo &quot;acceso directo&quot; solo tienen sentido cuando el usuario que trabaja con ellos es de confianza propietario / administrador del servidor. Ciertamente no desearía dar a los inquilinos en una caja de alojamiento VPS basada en contenedores de múltiples inquilinos un contenedor privilegiado. Podrían espiar e interferir fácilmente con otros inquilinos.</pre>
 </div>
-<div created="20191020085732850" modified="20191020085952951" orden="00" tags="Contenidos" title="Conceptos básicos de contenedores" type="text/x-markdown">
-<pre>Un contenedor es como una **Máquina Virtual** (VM Virtual Machine) liviana. Los contenedores ofrecen un alto grado de flexibilidad y portabilidad y permiten ejecutar múltiples sistemas operativos en el host como si fueran máquinas virtuales. Así que se podría tener un host Debian y sobre él ejecutar Redhat, Ubuntu, Suse Linux y/o Arch en contenedores.
+<div created="20191020085732850" modified="20201019105432583" orden="00" tags="Contenidos" title="Conceptos básicos de contenedores" type="text/x-markdown">
+<pre>Un contenedor es como una **Máquina Virtual** (VM Virtual Machine) liviana. Los contenedores ofrecen un alto grado de **flexibilidad** y **portabilidad** y permiten ejecutar múltiples sistemas operativos en el host como si fueran máquinas virtuales. Así que se podría tener un host Debian y sobre él ejecutar Redhat, Ubuntu, Suse Linux y/o Arch en contenedores.
 
 Se puede iniciar sesión en un contenedor, instalar aplicaciones y apagarse como una VM. Los contenedores se pueden mover fácilmente a través de los hosts, lo que hace que las aplicaciones instaladas en contenedores sean portátiles. La portabilidad y la flexibilidad son las principales ventajas de los contenedores.
 
